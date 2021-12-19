@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0425ADC1276F5C9100C9E959 /* RVS_AutofillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425ADC0276F5C9100C9E959 /* RVS_AutofillTextField.swift */; };
+		0495D491276B6CDD007B9412 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495D490276B6CDD007B9412 /* QuotesViewController.swift */; };
 		04FDDE19276B3EB000E92AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDDE18276B3EB000E92AF5 /* AppDelegate.swift */; };
 		04FDDE1B276B3EB000E92AF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDDE1A276B3EB000E92AF5 /* SceneDelegate.swift */; };
 		04FDDE1D276B3EB000E92AF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDDE1C276B3EB000E92AF5 /* ViewController.swift */; };
@@ -14,9 +16,12 @@
 		04FDDE23276B3EB000E92AF5 /* Movie_Quotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04FDDE21276B3EB000E92AF5 /* Movie_Quotes.xcdatamodeld */; };
 		04FDDE25276B3EB300E92AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FDDE24276B3EB300E92AF5 /* Assets.xcassets */; };
 		04FDDE28276B3EB300E92AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDDE26276B3EB300E92AF5 /* LaunchScreen.storyboard */; };
+		04FDDE30276B3FF200E92AF5 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDDE2F276B3FF200E92AF5 /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0425ADC0276F5C9100C9E959 /* RVS_AutofillTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVS_AutofillTextField.swift; sourceTree = "<group>"; };
+		0495D490276B6CDD007B9412 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		04FDDE15276B3EB000E92AF5 /* Movie Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FDDE18276B3EB000E92AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FDDE1A276B3EB000E92AF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		04FDDE24276B3EB300E92AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FDDE27276B3EB300E92AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04FDDE29276B3EB300E92AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FDDE2F276B3FF200E92AF5 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,13 @@
 				04FDDE1A276B3EB000E92AF5 /* SceneDelegate.swift */,
 				04FDDE1C276B3EB000E92AF5 /* ViewController.swift */,
 				04FDDE1E276B3EB000E92AF5 /* Main.storyboard */,
+				04FDDE2F276B3FF200E92AF5 /* CustomCollectionViewCell.swift */,
 				04FDDE24276B3EB300E92AF5 /* Assets.xcassets */,
 				04FDDE26276B3EB300E92AF5 /* LaunchScreen.storyboard */,
 				04FDDE29276B3EB300E92AF5 /* Info.plist */,
+				0425ADC0276F5C9100C9E959 /* RVS_AutofillTextField.swift */,
 				04FDDE21276B3EB000E92AF5 /* Movie_Quotes.xcdatamodeld */,
+				0495D490276B6CDD007B9412 /* QuotesViewController.swift */,
 			);
 			path = "Movie Quotes";
 			sourceTree = "<group>";
@@ -141,6 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FDDE1D276B3EB000E92AF5 /* ViewController.swift in Sources */,
+				0495D491276B6CDD007B9412 /* QuotesViewController.swift in Sources */,
+				0425ADC1276F5C9100C9E959 /* RVS_AutofillTextField.swift in Sources */,
+				04FDDE30276B3FF200E92AF5 /* CustomCollectionViewCell.swift in Sources */,
 				04FDDE23276B3EB000E92AF5 /* Movie_Quotes.xcdatamodeld in Sources */,
 				04FDDE19276B3EB000E92AF5 /* AppDelegate.swift in Sources */,
 				04FDDE1B276B3EB000E92AF5 /* SceneDelegate.swift in Sources */,
