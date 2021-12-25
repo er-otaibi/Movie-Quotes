@@ -48,8 +48,7 @@ extension ViewController: UICollectionViewDelegate , UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! CustomCollectionViewCell
-        
-        cell.backgroundColor = .green
+
         
         cell.movieImage.image = movieList.movies[indexPath.item].image
         cell.movieName.text = movieList.movies[indexPath.item].name
@@ -61,7 +60,7 @@ extension ViewController: UICollectionViewDelegate , UICollectionViewDataSource,
         
         let cell = collectionView.cellForItem(at: indexPath)
         
-        cell?.layer.borderColor = UIColor.red.cgColor
+        cell?.layer.borderColor = UIColor.systemYellow.cgColor
         cell?.layer.borderWidth = 5
         cell?.layer.cornerRadius = 10
     
@@ -115,7 +114,7 @@ struct Movie{
     var quots = [String]()
 }
 
-class Movies {
+class Movies{
     
     var movies = [Movie]()
     

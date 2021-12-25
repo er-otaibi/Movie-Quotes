@@ -53,7 +53,6 @@ class QuotesViewController: UIViewController , UITextFieldDelegate  {
             scoreLabel.isHidden = true
             correctGuessImage.isHidden = false
             
-            view.backgroundColor = UIColor(named: "purplee")
             
             if movieNameGuessTextFeild.text == secondSelectedMovies[randomMovie!].name {
                 scoreCounter+=1
@@ -63,12 +62,14 @@ class QuotesViewController: UIViewController , UITextFieldDelegate  {
 
                
                delayAnswer()
+                movieNameGuessTextFeild.text?.removeAll()
 
             }
             else {
-            
+                self.view.backgroundColor = UIColor.white
                 correctGuessImage.image = UIImage(named: "wrongGuess.png")!
                 delayAnswer()
+                movieNameGuessTextFeild.text?.removeAll()
             }
         }
     func showAlertAction(title: String, message: String){
@@ -77,8 +78,9 @@ class QuotesViewController: UIViewController , UITextFieldDelegate  {
                 if title == "Help"{
                     self.movieNameGuessTextFeild.isHidden = true
                     self.scoreLabel.isHidden = true
-                    self.movieQuotesLabel.text = "The Name Of Movie That Has This Quotes Is \n\(self.secondSelectedMovies[self.randomMovie!].name)"
-                    self.view.backgroundColor = UIColor(named: "purplee")
+                    self.view.backgroundColor = UIColor.white
+                    self.movieQuotesLabel.text = "The Answer Is .. \n\n\(self.secondSelectedMovies[self.randomMovie!].name)"
+                    //self.view.backgroundColor = UIColor(named: "purplee")
                     self.delayAnswer()
                 }
                 else {
@@ -93,9 +95,9 @@ class QuotesViewController: UIViewController , UITextFieldDelegate  {
         movieNameGuessTextFeild?.dataSource = self
         movieNameGuessTextFeild?.delegate = self
            // let purple = UIColor(named: "purplee")
-        movieNameGuessTextFeild.layer.borderColor =  UIColor.purple.cgColor
-            movieNameGuessTextFeild.layer.borderWidth = 2
-            movieNameGuessTextFeild.layer.cornerRadius = 7
+//        movieNameGuessTextFeild.layer.borderColor =  UIColor.purple.cgColor
+//            movieNameGuessTextFeild.layer.borderWidth = 2
+//            movieNameGuessTextFeild.layer.cornerRadius = 7
             
             correctGuessImage.isHidden = true
             putQuote()

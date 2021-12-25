@@ -39,8 +39,9 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVH-P9-5PD">
                                                             <rect key="frame" x="0.0" y="0.0" width="194" height="23.5"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.27231035329999997" blue="0.65051570869999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sbs-4i-GPu">
@@ -101,10 +102,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q7k-Rm-bBm">
-                                <rect key="frame" x="20" y="188" width="374" height="45.5"/>
+                                <rect key="frame" x="20" y="188" width="374" height="48"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Guess a Movie name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kj8-nz-mgJ" customClass="RVS_AutofillTextField" customModule="Movie_Quotes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Guess a Movie name" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kj8-nz-mgJ" customClass="RVS_AutofillTextField" customModule="Movie_Quotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="wjf-za-QbL"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" smartDashesType="yes"/>
                                         <userDefinedRuntimeAttributes>
@@ -123,12 +127,12 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RC-Jm-kfo">
-                                <rect key="frame" x="10" y="433.5" width="394" height="29.5"/>
+                                <rect key="frame" x="10" y="436" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zej-l6-Gdf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zej-l6-Gdf">
                                 <rect key="frame" x="30" y="738.5" width="354" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -145,19 +149,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="S3i-xv-Khl" firstAttribute="centerX" secondItem="knC-Xj-Zef" secondAttribute="centerX" id="1XF-tr-wgu"/>
-                            <constraint firstItem="0RC-Jm-kfo" firstAttribute="centerY" secondItem="knC-Xj-Zef" secondAttribute="centerY" id="5nH-no-XZO"/>
                             <constraint firstItem="Q7k-Rm-bBm" firstAttribute="leading" secondItem="EjR-PM-ddg" secondAttribute="leading" constant="20" id="BBQ-Wu-DYa"/>
-                            <constraint firstItem="0RC-Jm-kfo" firstAttribute="top" secondItem="Q7k-Rm-bBm" secondAttribute="bottom" constant="200" id="KFw-tM-ccB"/>
                             <constraint firstItem="EjR-PM-ddg" firstAttribute="trailing" secondItem="S3i-xv-Khl" secondAttribute="trailing" constant="80" id="ODO-s5-bvJ"/>
                             <constraint firstItem="EjR-PM-ddg" firstAttribute="trailing" secondItem="Zej-l6-Gdf" secondAttribute="trailing" constant="30" id="QYF-mE-3GO"/>
                             <constraint firstItem="EjR-PM-ddg" firstAttribute="bottom" secondItem="Zej-l6-Gdf" secondAttribute="bottom" constant="100" id="U5j-bb-L8J"/>
                             <constraint firstItem="EjR-PM-ddg" firstAttribute="trailing" secondItem="Q7k-Rm-bBm" secondAttribute="trailing" constant="20" id="WOv-tp-zq2"/>
-                            <constraint firstItem="0RC-Jm-kfo" firstAttribute="leading" secondItem="EjR-PM-ddg" secondAttribute="leading" constant="10" id="Zs9-uQ-okD"/>
                             <constraint firstItem="Q7k-Rm-bBm" firstAttribute="top" secondItem="EjR-PM-ddg" secondAttribute="top" constant="100" id="aS7-Te-2al"/>
+                            <constraint firstItem="EjR-PM-ddg" firstAttribute="trailing" secondItem="0RC-Jm-kfo" secondAttribute="trailing" constant="10" id="c3r-VW-Krr"/>
+                            <constraint firstItem="0RC-Jm-kfo" firstAttribute="leading" secondItem="EjR-PM-ddg" secondAttribute="leading" constant="10" id="cN7-Kh-v1T"/>
                             <constraint firstItem="S3i-xv-Khl" firstAttribute="leading" secondItem="EjR-PM-ddg" secondAttribute="leading" constant="80" id="fai-hF-0hl"/>
                             <constraint firstItem="Zej-l6-Gdf" firstAttribute="leading" secondItem="EjR-PM-ddg" secondAttribute="leading" constant="30" id="jAF-DO-YsR"/>
-                            <constraint firstItem="0RC-Jm-kfo" firstAttribute="centerX" secondItem="knC-Xj-Zef" secondAttribute="centerX" id="jLB-h2-Shx"/>
-                            <constraint firstItem="EjR-PM-ddg" firstAttribute="trailing" secondItem="0RC-Jm-kfo" secondAttribute="trailing" constant="10" id="mkK-Lc-GK5"/>
+                            <constraint firstItem="0RC-Jm-kfo" firstAttribute="top" secondItem="Q7k-Rm-bBm" secondAttribute="bottom" constant="200" id="stp-72-kIt"/>
                             <constraint firstItem="S3i-xv-Khl" firstAttribute="centerY" secondItem="knC-Xj-Zef" secondAttribute="centerY" id="wYD-gJ-h2D"/>
                         </constraints>
                     </view>
